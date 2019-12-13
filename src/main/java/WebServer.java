@@ -36,7 +36,12 @@ public class WebServer {
             os.close();
         }
     }
+    static class loginRequestHandler implements HttpHandler {
+        public static final String DB_FILE = "C:\\Users\\Kevin\\IdeaProjects\\ProjectTwo\\Data\\store.db";
+        public void handle(HttpExchange exchange) throws IOException {
 
+        }
+    }
     static class productRequestHandler implements HttpHandler {
         public static final String DB_FILE = "C:\\Users\\Kevin\\IdeaProjects\\ProjectTwo\\Data\\store.db";
         public void handle(HttpExchange exchange) throws IOException {
